@@ -3,7 +3,6 @@
 PYAS
 
 Readme Language
-繁體中文
 
 File Information
 PYAS.py -> Main PYAS Program (including animation, scanning, protection functions, etc.)
