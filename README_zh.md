@@ -1,30 +1,28 @@
-# PYAS (Python 防毒軟體)
+# PYAS (Python )
 
-![PYAS](https://github.com/87owo/PYAS/assets/85057800/153bcad9-18ab-4c81-bcb6-186434d0ef1b)
+![PYAS](https://github.com/Kanagaraj123/PYAS-main)
 
-## 文件訊息
+## 
 
-PYAS.py -> PYAS主程式（包括動畫、掃描、保護功能等）
+PYAS.py ->  Main PYAS Program (including animation, scanning, protection functions, etc.)
 
-PYAS_Engine.py -> 轉換資料庫（用於相互轉換資料庫字典和清單）
+PYAS_Engine.py -> Conversion Database (used to convert database dict and list to and from each other)
 
-PYAS_Extension.py -> 檔案副檔名（包括掃描檔案副檔名和常用檔案副檔名）
+PYAS_Extension.py -> File Extension (including scanned file extensions and common file extensions)
 
-PYAS_Model.* -> 病毒庫（病毒庫必須放在同一目錄下）
+PYAS_Model.* -> Virus Database (the virus database must be placed in the same directory)
 
-PYAS_Interface.py -> PyQt5 Interface（由QT設計師設計，必須與主程式相符）
+PYAS_Interface.py -> PyQt5 Interface (designed by QT designer, must be matched with the main program)
 
-PYAS_Resource.py -> PyQt5資源（狀態圖片、圖示包、按鈕圖示等）
+PYAS_Resource.py -> PyQt5 Resource (status pictures, icon packages, button icons, etc.)
 
-PYAS_Language.py -> 翻譯字典（繁體中文、簡體中文、英文）
+PYAS_Language.py -> Translate Dict (Traditional Chinese, Simplified Chinese, English)
 
-PYAS_Version.py -> Pyinstaller Info（檔案資訊、版本資訊、原名等）
+PYAS_Version.py -> Pyinstaller Info (file information, version information, original name, etc.)
 
-## 要求
+## Requirements
+pip install requirements 
 
-使用 pip install requirements 來安裝需要的模組
-
-```
 psutil==5.9.5
 pefile==2023.2.7
 requests==2.31.0
@@ -33,9 +31,9 @@ pywin32==306
 PyQt5==5.15.9
 ```
 
-## 哈希掃描
+## Hash Scanning
 
-使用奇虎360雲端服務掃描已知惡意文件
+Use Qihoo 360 cloud service to scan known malicious files
 
 ```
 import hashlib, requests
@@ -62,9 +60,9 @@ info = hash_scan("path to file")
 print(info)
 ```
 
-## 文件掃描
+## Pefile Scanning
 
-取得pefile檔案函數導入表進行掃描
+Get the pefile file function import table for scanning
 
 ```
 import pefile
@@ -90,9 +88,9 @@ info = pe_scan("path to file")
 print(info)
 ```
 
-## 進程偵測
+## Process Detect
 
-顯示新進程名稱、檔案路徑、cmd 行、pid
+Show the new process name, file path, cmd line, pid
 ```
 import psutil, time
 
@@ -118,9 +116,9 @@ def proc_detect():
 proc_detect()
 ```
 
-## 檔案偵測
+## File Detect
 
-監控指定路徑下的檔案變化
+Monitor file changes under the specified path
 ```
 import os, win32file, win32con
 
@@ -146,22 +144,21 @@ def file_detect(path):
 file_detect("path")
 ```
 
-## 官方網頁
+## Official Website
 
-https://pyantivirus.wixsite.com/pyas
+https://github.com/Kanagaraj123/PYAS-main
 
-https://github.com/87owo/PYAS
+## MIT license
 
-## 開源許可證
+https://github.com/Kanagaraj123/PYAS-main/blob/main/LICENSE.md
 
-https://github.com/87owo/PYAS/blob/main/LICENSE.md
+## Support System
 
-## 支援的系統
+Windows 8.1, 10, 11 (64-bit), Ram 1GB, Rom 1GB or higher
 
-Windows 8.1, 10, 11 (64-bit),記憶體 1GB, 磁碟容量 1GB 或更高
 Other systems may experience software malfunctions or crash
 
 ## Special Thanks
-360, Wix, VirusShare, mtkiao129, AV-T Team of LisectGroup
+Kirthick , Kishor , Gokul , K G Arun kumar
 
-Copyright© 2020~2024 PYAS Security By 87owo
+Copyright© 2024 PYAS Security By Kanagaraj G
