@@ -5,7 +5,7 @@ https://github.com/Kanagaraj123/PYAS-main
 
 Kirthick , Kishor , Gokul , K G Arun kumar
 
-# PYAS-main
+# PYAS-Kanagaraj
  PYAS (Python Antivirus Software)
 
 Readme Language
